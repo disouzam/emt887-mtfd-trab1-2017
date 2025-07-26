@@ -1,5 +1,5 @@
       module Testing
-        use Analyticsolution2d
+        use AnalyticSolution2D
         use Coefficients
         use CustomDouble
         use Geometry
