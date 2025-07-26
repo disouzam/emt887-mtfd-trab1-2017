@@ -274,11 +274,10 @@
 
 
 *     TDMA
-      subroutine TDMA1D(Nx,Aw,Ap,Ae,TitV,TitN,Tw,Te,tol)
+      subroutine TDMA1D(Nx,Aw,Ap,Ae,TitV,TitN,Tw,Te)
         implicit none
 
         integer :: Nx, I, iter
-        double precision :: tol
         double precision :: Tw, Te
         double precision :: TitV(0:999,0:0), TitN(0:999,0:0)
         double precision :: Aw(0:999,0:0), Ae(0:999,0:0), Ap(0:999,0:0)

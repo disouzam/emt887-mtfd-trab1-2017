@@ -68,7 +68,7 @@
           end do
 
           if (debugmode) then
-            call ShGeom1D(Nx,Lx,NPx,NIx,DelX,DeltaX)
+            call ShGeom1D(Nx,NPx,NIx,DelX,DeltaX)
           end if
 
 100     continue
@@ -111,7 +111,7 @@
         logical :: debugmode
         common /dbgMode/ debugmode
 
-        integer :: N(1:3), I, J
+        integer :: N(1:3), I
         double precision :: Lth(1:3)
         double precision :: NPx(0:999), NIx(0:999),DX
         double precision :: DelX(0:999), DeltaX(0:999)
@@ -326,14 +326,14 @@
 
 
 * Output
-      subroutine ShGeom1D(Nx,Lx,NPx,NIx,DelX,DeltaX)
+      subroutine ShGeom1D(Nx,NPx,NIx,DelX,DeltaX)
         implicit none
 
         logical :: debugmode
         common /dbgMode/ debugmode
 
         integer :: Nx, I
-        double precision :: NPx(0:999),NIx(0:999), Lx
+        double precision :: NPx(0:999),NIx(0:999)
         double precision :: DelX(0:999), DeltaX(0:999)
 
 100     FORMAT(' ', A,I1,A,F6.3)

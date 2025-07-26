@@ -10,7 +10,6 @@
         implicit none
 
         double precision :: k_T
-        double precision :: Temp
 
         k_T = 63.9D0
 
