@@ -1,3 +1,11 @@
 {
-    "fortran.fortls.disabled": true
+    "fortran.fortls.disabled": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/bin": true,
+        "**/obj": true,
+        "**/*.depend": true,
+        "**/*.layout": true,
+        "**/*.workspace": true
+    }
 }
