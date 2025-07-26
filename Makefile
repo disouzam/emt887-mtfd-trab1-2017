@@ -24,8 +24,8 @@ Solver.o \
 Testing.o \
 main.o 
 
-SRC_DIR_fd1 = 
-OBJS_DIR = obj/Debug/
+SRC_DIR_fd1 = src/
+OBJS_DIR = obj/Debug/src/
 EXE_DIR = bin/Debug/
 
 EXE = MTFDTrab1.exe
