@@ -1,0 +1,50 @@
+ ===============================================================
+         Steady state solution for a 2D rectangular plate       
+             with borders at constant temperature               
+                     Absolute temperatures                      
+ ===============================================================
+                 Author: Dickson Alves de Souza                 
+    Based on lectures by professor Roberto Parreiras Tavares    
+       and book Numerical Heat Transfer and Fluid Flow          
+       by Suhas V. Patankar (1980)                              
+                                                                
+               Federal University of Minas Gerais               
+                      September 21st, 2017                      
+ ===============================================================
+                       Input parameters:                        
+ 
+ Lenght in X direction:       2.5000
+ Lenght in Y direction:       2.5000
+ Nodes in X direction:             3
+ Nodes in Y direction:             3
+ Temperature T1 (left, right and bottom borders):    1200.0000
+ Temperature T2 (top border):                         700.0000
+ 
+ SOLUTION of LINEAR SYSTEM: Comparison of four methods
+ 1 - Jacobi Method
+ 2 - Gauss-Seidel Method
+ 3 - TDMA method without ADI
+ 4 - TDMA method with ADI
+ 
+     No relaxation applied to solution.
+ Tolerance:   0.1000E-04
+ 
+ Iterations -  Jacobi Method:                      2
+ Iterations -  Gauss-Seidel Method:                2
+ Iterations -  TDMA method without ADI:            2
+ Iterations -  TDMA method with ADI:               2
+ 
+ ============================================================================================================
+                                            Calculation Results                                              
+ ============================================================================================================
+            I           J           X           Y       T_Jac      T_Gaus      T_TDMA  T_TDMA_ADI   Exact Sol
+ ============================================================================================================
+            0           0      0.0000      0.0000   1200.0000   1200.0000   1200.0000   1200.0000   1200.0000
+            0           1      0.0000      1.2500   1200.0000   1200.0000   1200.0000   1200.0000   1200.0000
+            0           2      0.0000      2.5000    700.0000    700.0000    700.0000    700.0000    700.0000
+            1           0      1.2500      0.0000   1200.0000   1200.0000   1200.0000   1200.0000   1200.0000
+            1           1      1.2500      1.2500   1075.0000   1075.0000    775.0000    775.0000   1075.0000
+            1           2      1.2500      2.5000    700.0000    700.0000    700.0000    700.0000    700.0000
+            2           0      2.5000      0.0000   1200.0000   1200.0000   1200.0000   1200.0000   1200.0000
+            2           1      2.5000      1.2500   1200.0000   1200.0000   1200.0000   1200.0000   1200.0000
+            2           2      2.5000      2.5000    700.0000    700.0000    700.0000    700.0000    700.0000
