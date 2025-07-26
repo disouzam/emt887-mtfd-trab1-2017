@@ -88,6 +88,9 @@
 		</Unit>
 		<Extensions>
 			<editor_config active="1" use_tabs="0" tab_indents="1" tab_width="4" indent="4" eol_mode="2" />
+			<code_completion />
+			<envvars />
+			<debugger />
 			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>
